@@ -72,7 +72,7 @@ namespace v2rayN.Handler
                     var strProxy = string.Empty;
                     if (Utils.IsNullOrEmpty(config.systemProxyAdvancedProtocol))
                     {
-                        strProxy = $"http=http://{Global.Loopback}:{port};https=http://{Global.Loopback}:{port}";
+                        strProxy = $"http=http://{Global.Loopback}:{port};https=http://{Global.Loopback}:{port}"; //这里修改过
                     }
                     else
                     {
